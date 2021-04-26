@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>html+css</title>
+   
+   
+<style type="text/css">
+       body
+{
+	margin:0;
+	padding:0;
+	border:0;
+	color:white;
+}
+a:link,a:hover
+{
+	text-decoration:none;
+	color:white;
+}
+#Container
+{
+	width:1024px;
+	margin:auto auto;/*设置整个容器在浏览器中水平居中*/
+	height:auto;
+}
+#top
+{
+	width:1000px;
+	height:100px;
+	font-size:30px;
+	line-height:50px;
+	margin:0px 12px 0px 12px;
+	background-color:#E5F0FA;
+}
+#logo
+{
+	color:black;
+	font-size:40px;
+	font-family:黑体;
+	font-weight:bolder;
+	margin:20px 0px 0px 100px;
+	float:left;
+}
+#small_nav ul
+{
+	list-style:none;/*去掉ul前面的项目符号*/
+	margin:40px 100px 0px 0px;
+	width:auto;
+	height:10px;
+	float:right;
+	/*border:1px solid white;*//*设置边框显示竖线效果*/
+	/*margin-left:60px;*//*控制外边距（margin）达到定位的效果*/
+	/*padding-left:50px;*//*控制内边距达到定边框竖线的效果*/
+	padding:0px;
+}
+#small_nav ul li
+{
+	float:left;/*变为横向排列*/
+}
+#small_nav ul li a,#small_nav ul li a:visited
+{
+	color:#1F202B;
+	display:block;
+	line-height:1.0em;
+	padding:4px 5px;
+	text-decoration:none;/*不显示超链接下划线*/
+	font-size:12px;
+}
+#small_nav ul li a:hover/*hover-鼠标指针位于链接的上方*/
+{
+	background-color:#bfcbd6;
+	color:#465c71;
+	text-decoration:none;
+}
+#small_nav ul li a:active/*active-链接被点击的时刻*/
+{
+	background-color:#465c71;
+	color:#cfdbe6;
+	text-decoration:none;
+}
+#phone_intro
+{
+	color:#1F202B;
+	font-size:12px;
+	float:right;
+	margin:0px 104px 0px 0px;
+	position:relative;
+	bottom:3px;
+}
+#phone_intro special
+{
+	color:#0269A5;
+	font-size:15px;
+	font-family:Calibri;
+}
+#link
+{
+	height:30px;
+	width:1000px;
+	margin:0px 12px 0px 12px;
+	background-color:#0269A5;
+	border-top-width:1px;
+	border-top-style:dashed;
+	border-right-style:none;
+	border-bottom-style:none;
+	border-left-style:none;
+	border-top-color:blue;
+}
+#nav ul
+{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	height:auto;
+	width:auto;
+}
+#nav ul li
+{
+	float:left;
+}
+#nav ul li a,#nav ul li a:visited
+{
+	background-color:#0269A5;
+	border:1px #4e667d solid;
+	color:#dde4ec;
+	font-size:12px;
+	display:block;/*显示为块级元素,此元素前后会带有换行符*/
+	line-height:1.35em;
+	padding:8px 37.5px;
+	text-decoration:none;
+	white-space:nowrap;/*文本内的空白处,不会换行,文本会在同一行上继续,直到遇到<br>*/
+}
+#nav ul li a:hover
+{
+	background-color:#bfcbd6;
+	color:#465c71;
+	text-decoration:none;
+}
+#nav ul li a:active
+{
+	background-color:#465c71;
+	color:#cfdbe6;
+	text-decoration:none;
+}
+#nav ul li ul{ position:absolute; display:none;}
+#nav ul li ul li{ float:none; line-height:30px; text-align:left;}
+#nav ul li ul li a{ width:100%;}
+#nav ul li ul li a:hover{ background-color:#06f;}
+#nav ul li:hover ul{ display:block}
+#picture
+{
+	width:956px;
+	height:370px;	
+	padding:22px;
+	margin:0px 12px 0px 12px;
+	background-color:red;
+	background-attachment:fixed;/*背景图像固定,不会随着页面的其余部分滚动*/
+}
+#dynamic_text_pre
+{
+	width:69px;
+	height:52px;	
+	margin:20px auto 10px 72px;
+	background-color:white;
+	float:left;
+	text-align:center;
+	border:1px solid #C4C4C4;	
+	border-right-style:none;
+	border-top-color:white;
+}
+#dynamic_text_pre p
+{
+	position:relative;
+	bottom:3px;
+	left:0px;
+}
+#dynamic_text
+{
+	width:740px;
+	height:32px;	
+	margin:20px auto 10px auto;
+	background-color:white;
+	border:1px solid #C4C4C4;
+	float:left;
+	border-left-style:none;
+}
+
+
+#footer
+{
+	width:1000px;
+	height:100px;	
+	background-color:white;
+	float:right;
+	margin-right:12px;
+	margin-top:15px;
+	color:#1F202B;
+	font-size:20px;
+	line-height:1.5em;
+}
+    </style>
+</head>
+
+<body>
+<div id="Container">
+   <div id="top">
+       <div id="logo">LOGO</div>
+       <div id="small_nav">
+	  <ul>
+	    <li><a href="readme.html">设为首页</a></li>
+	    <li><a href="readme.html">加入收藏</a></li>
+	    <li><a href="readme.html">English</a></li>
+	  </ul>
+       </div>
+	<br/>
+       <div id="phone_intro"> 全国免费咨询热线:<special>400&nbsp;**********</special></div>
+   </div>
+<!-------------------------------------------------------------------------------------------------->
+   <div id="link">
+       <div id="nav">
+	 <ul>
+	    <li><a href="readme.html">网站首页</a></li>
+	    <li><a href="readme.html">关于我们</a></li>
+	    <li><a href="readme.html">产品展示</a>
+            <ul>
+            	<li><a href="#">java</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">C语言</a></li>
+             </ul>      
+           </li>
+
+	    <li><a href="readme.html">新闻中心</a></li>
+	    <li><a href="readme.html">资质证书</a></li>
+	    <li><a href="readme.html">人才招聘</a></li>
+	    <li><a href="readme.html">在线留言</a></li>
+	    <li><a href="readme.html">联系我们</a></li>
+	</ul>
+      </div>
+   </div>
+<!-------------------------------------------------------------------------------------------------->
+   <div id="picture">
+      <div align="center"><img src="images/jd.jpg"></div>
+      <div id="dynamic_text_pre"><p style="color:black;font-size:13px;font-family:黑体;font-weight:bold;">最新动态</p></div>
+      <div id="dynamic_text">
+	<marquee align="left" behavior="scroll" bgcolor="white" direction="left" hspace="0" vspace="0" weith="800" height="27" loop="-1" scrollamount="10" scrolldelay="100" onMouseOut="this.start()" onMouseOver="this.stop()">
+		<p style="color:#1F202B;font-size:12px;font-family:宋体;">·中国大学生创业网&ensp;&emsp;·过去七年，这家公司的营业额翻了24番，从2004年的......&ensp;&emsp;·增加至2011年的284.96亿元&ensp;&emsp;·增长之下的稳定高利润率4000亿港元，增加61倍</p>
+	</marquee>
+      </div>	
+   </div>
+<!-------------------------------------------------------------------------------------------------->
+ 
+
+    <div id="footer">
+	<div style="color:black " align="center">*本网站中所涉及的图片、文字等资料均属于***********有限公司所有，未经许可不得转载*</div>
+	<div style="color:black " align="center">备**********号 ******提供技术支持</div>
+    </div>
+</div>
+
+</body>
+</html>

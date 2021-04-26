@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>实验三</title>
+<!--页面中<h1>我的个人网站</h1>,分别用三种样式设置<h1>的样式,要求<h1>显示蓝背景，白字，粗体，楷体等//在页面上加上两个段落，第一个段落显示：我的简介；第二个段落显示：我的照片，两个段落都是蓝色、加粗、二号字、隶书。第一个段落左对齐，第二个段落右对齐。//在页面上加上链接，链接文本为：岭南师范学院，通过样式表设置文本为红色，当鼠标放到链接文本上，链接文本变为黄色。//设置一个竖直导航菜单，如下图：再把这个竖直导航菜单转为横向的。-->
+<!--
+    1.JS语句中不能用两层“”运行会报错，alert()函数能传递参数
+    2.调用函数时不需要写function+函数名（），示例：onclick="fa()"
+
+
+-->
+    <link rel="stylesheet" type="text/css" href="" >
+<style>
+h1{font-weight:bold;background:blue;font-family:楷体;color:white;}
+p{color:blue;font-weight:bold;font-size:"2";font-family:"隶书";}
+p.one{text-align:left;}
+p.two{text-align:right;}
+a.menu{display:block;
+border:2px lightpink solid;
+background-color: aliceblue;
+margin-top: 3px;/*相邻两个元素的外边距*/
+width: 100px ;
+}
+a:link{color:green;}
+a:visited{color:#9CF;}
+a:hover{color:yellow;}
+
+/*!a:active{color:#CF6;}*/
+
+</style>
+<script type="text/javascript" language="javascript">
+function tx (){alert("即将跳转到岭南师范学院的官方网站");}
+function fa (text) {alert("即将跳转到外部链接："+text+" 请注意信息安全");}
+function fx (){document.getElementById('form').style.display='none';}
+function fxr(){document.getElementById('form').style.display="inline"}
+
+</script>
+</head>
+
+<body>
+<h1>我的个人网站</h1>
+
+<p class="one">我的简介</p>
+<p class="two">我的照片</p>
+<a onclick="tx()" target="ex" href="http://www.lingnan.edu.cn/">岭南师范学院</a><br/>
+
+<div class="menu" style="border:1px solid black ;width:110px ;height:150px ;text-align: center;float: left;">
+<a class="menu" target="ex" onclick='alert("跳转到外部链接:京东，请注意信息安全。")' href="https://wwww.jd.com">某东</a>
+<a class="menu" target="ex" text="某宝" onclick="fa(text);" href="https://taobao.com">某宝</a>
+<a class="menu" target="ex" href="https://2.taobao.com">咸鱼</a>
+<a class="menu" target="ex" href="https://www.miaomiaozhe.com">喵喵折</a>
+<a class="menu" target="ex" href="https://www.apple.com.cn">Apple.com</a>
+</div>
+<!--</div>
+<div style="border: rgb(185, 118, 118) solid 2px ; background-color: lightskyblue ;width: 300px;height:400px; float: left;">
+    <div style="float:left ;background: lightpink; border: rgb(216, 25, 168) solid;">divk块1</div>
+    <div style="float:left; background: rgb(26, 52, 196); border: rgb(204, 25, 144) solid;">div块2</div>
+    <p>文字测试：float 元素浮动框外围的文字排布格式；</p>
+</div>-->
+
+<input type="button" value="隐藏示页面内浏览器" onclick="fx()" >
+<input type="button" value="展示页面内浏览器" onclick="fxr()" >
+<br/>
+<iframe id="form" name="ex"  style="display:none ;float: left;" src="expriment.html" width="1000" height="800"><iframe>
+
+
+
+</body>
+</html>
